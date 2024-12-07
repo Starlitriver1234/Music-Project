@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgwgk6ajwawhr"]
+[gd_scene load_steps=6 format=3 uid="uid://dgwgk6ajwawhr"]
 
 [ext_resource type="Texture2D" uid="uid://bj5u58m7a765u" path="res://Assets/Piano.png" id="1_27qx5"]
 [ext_resource type="Texture2D" uid="uid://c80vhk6ne3qvk" path="res://Assets/key.png" id="2_3mjno"]
 [ext_resource type="AudioStream" uid="uid://cpjobjhgp1yue" path="res://Assets/1.wav" id="3_h46mk"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="3_u4cbq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k5h7q"]
 
@@ -17,6 +18,7 @@ texture = ExtResource("1_27qx5")
 position = Vector2(150, 487)
 scale = Vector2(0.0750428, 0.0689881)
 texture = ExtResource("2_3mjno")
+script = ExtResource("3_u4cbq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
 shape = SubResource("RectangleShape2D_k5h7q")
