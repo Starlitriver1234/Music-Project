@@ -6,7 +6,7 @@ var key2 : Texture
 
 func _ready() -> void:
 	key = texture
-	key2 = load("res://Assets/key2.png")
+	key2 = load("res://Assets/New_Key2.png")
 	
 	pass
 
