@@ -1,7 +1,10 @@
 extends Sprite2D
 
+
 var key : Texture
 var key2 : Texture
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -10,6 +13,7 @@ func _ready() -> void:
 	
 	pass # Replace with function body.
 
+onready var audio_player =$AudioStreamPlayer2D
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event):
