@@ -2,9 +2,9 @@
 
 Include for each contributer:
 
-Name:
+Name:Tudor Marinescu
 
-Student Number: 
+Student Number: C24745999
 
 Class Group:
 
