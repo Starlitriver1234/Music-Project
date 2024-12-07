@@ -1,22 +1,23 @@
 [gd_scene load_steps=5 format=3 uid="uid://dgwgk6ajwawhr"]
 
-[ext_resource type="Texture2D" uid="uid://bj5u58m7a765u" path="res://Assets/Piano.png" id="1_27qx5"]
-[ext_resource type="Texture2D" uid="uid://mf0yitu4hmkc" path="res://Assets/New_Key.png" id="2_1rmdk"]
+[ext_resource type="Texture2D" uid="uid://cjy4xpxmtjglw" path="res://Assets/Piano Background.png" id="1_aepxe"]
+[ext_resource type="Texture2D" uid="uid://dkxunmuwlbyl5" path="res://Assets/Piano Key.png" id="2_0ucar"]
 [ext_resource type="AudioStream" uid="uid://cpjobjhgp1yue" path="res://Assets/1.wav" id="3_h46mk"]
 [ext_resource type="Script" path="res://sprite_2d.gd" id="3_u4cbq"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Piano" type="Sprite2D" parent="."]
-position = Vector2(589.375, 329.688)
-scale = Vector2(0.185754, 0.156143)
-texture = ExtResource("1_27qx5")
+position = Vector2(577, 328)
+scale = Vector2(0.168472, 0.14231)
+texture = ExtResource("1_aepxe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(105, 439)
-scale = Vector2(0.0491358, 0.0989182)
-texture = ExtResource("2_1rmdk")
+position = Vector2(96, 463)
+scale = Vector2(0.0612615, 0.0989182)
+texture = ExtResource("2_0ucar")
 script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D"]
+position = Vector2(32.0624, 0)
 stream = ExtResource("3_h46mk")
