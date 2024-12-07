@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgwgk6ajwawhr"]
+[gd_scene load_steps=6 format=3 uid="uid://dgwgk6ajwawhr"]
 
 [ext_resource type="Texture2D" uid="uid://cjy4xpxmtjglw" path="res://Assets/Piano Background.png" id="1_aepxe"]
 [ext_resource type="Texture2D" uid="uid://dkxunmuwlbyl5" path="res://Assets/Piano Key.png" id="2_0ucar"]
 [ext_resource type="AudioStream" uid="uid://cpjobjhgp1yue" path="res://Assets/1.wav" id="3_h46mk"]
 [ext_resource type="Script" path="res://sprite_2d.gd" id="3_u4cbq"]
+[ext_resource type="AudioStream" uid="uid://c7kxj01drgx06" path="res://Assets/2.wav" id="5_37w7v"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -21,3 +22,13 @@ script = ExtResource("3_u4cbq")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D"]
 position = Vector2(32.0624, 0)
 stream = ExtResource("3_h46mk")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(262, 463)
+scale = Vector2(0.0612615, 0.0989182)
+texture = ExtResource("2_0ucar")
+script = ExtResource("3_u4cbq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D2"]
+position = Vector2(32.0624, 0)
+stream = ExtResource("5_37w7v")
