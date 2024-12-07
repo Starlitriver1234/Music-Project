@@ -1,8 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgwgk6ajwawhr"]
+[gd_scene load_steps=5 format=3 uid="uid://dgwgk6ajwawhr"]
 
-[ext_resource type="Texture2D" uid="uid://caosjqaclp71d" path="res://icon.svg" id="1_wvu4m"]
+[ext_resource type="Texture2D" uid="uid://bj5u58m7a765u" path="res://Assets/Piano.png" id="1_27qx5"]
+[ext_resource type="Texture2D" uid="uid://c80vhk6ne3qvk" path="res://Assets/key.png" id="2_3mjno"]
+[ext_resource type="AudioStream" uid="uid://cpjobjhgp1yue" path="res://Assets/1.wav" id="3_h46mk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k5h7q"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Piano" type="Sprite2D" parent="."]
+position = Vector2(589.375, 329.688)
+scale = Vector2(0.185754, 0.156143)
+texture = ExtResource("1_27qx5")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_wvu4m")
+position = Vector2(150, 487)
+scale = Vector2(0.0750428, 0.0689881)
+texture = ExtResource("2_3mjno")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+shape = SubResource("RectangleShape2D_k5h7q")
+disabled = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D"]
+stream = ExtResource("3_h46mk")
