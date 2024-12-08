@@ -1,12 +1,19 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgwgk6ajwawhr"]
+[gd_scene load_steps=14 format=3 uid="uid://dgwgk6ajwawhr"]
 
 [ext_resource type="Texture2D" uid="uid://cjy4xpxmtjglw" path="res://Assets/Piano Background.png" id="1_aepxe"]
 [ext_resource type="Texture2D" uid="uid://dkxunmuwlbyl5" path="res://Assets/Piano Key.png" id="2_0ucar"]
-[ext_resource type="AudioStream" uid="uid://cpjobjhgp1yue" path="res://Assets/1.wav" id="3_h46mk"]
 [ext_resource type="Script" path="res://sprite_2d.gd" id="3_u4cbq"]
-[ext_resource type="AudioStream" uid="uid://c7kxj01drgx06" path="res://Assets/2.wav" id="5_37w7v"]
+[ext_resource type="AudioStream" uid="uid://c5xs3jq70otks" path="res://Assets/Note 1.wav" id="4_wnjhg"]
+[ext_resource type="AudioStream" uid="uid://cilrb4emc345a" path="res://Assets/Note 2.wav" id="5_o02tp"]
+[ext_resource type="AudioStream" uid="uid://v3n1fbiv54x3" path="res://Assets/Note 3.wav" id="6_1t13r"]
 [ext_resource type="Script" path="res://button.gd" id="6_jka7i"]
 [ext_resource type="AudioStream" uid="uid://crypoan6lhnfk" path="res://Assets/Menu.wav" id="6_vr7fj"]
+[ext_resource type="AudioStream" uid="uid://cf0tp27eqhu7w" path="res://Assets/Note 4.wav" id="7_l4axp"]
+[ext_resource type="AudioStream" uid="uid://cuhvyl20hxmwd" path="res://Assets/Note 5.wav" id="8_vfbmd"]
+[ext_resource type="AudioStream" uid="uid://dda3a1y0w53c0" path="res://Assets/Note 6.wav" id="9_xg4wl"]
+[ext_resource type="AudioStream" uid="uid://dp1t546rs33er" path="res://Assets/Note 7.wav" id="10_aeb8u"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_dpwlv"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -23,7 +30,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("3_h46mk")
+stream = ExtResource("4_wnjhg")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(250, 464)
@@ -33,7 +40,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D2"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("5_37w7v")
+stream = ExtResource("5_o02tp")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 position = Vector2(414, 464)
@@ -43,7 +50,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D3"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("5_37w7v")
+stream = ExtResource("6_1t13r")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
 position = Vector2(579, 464)
@@ -53,7 +60,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D4"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("5_37w7v")
+stream = ExtResource("7_l4axp")
 
 [node name="Sprite2D5" type="Sprite2D" parent="."]
 position = Vector2(742, 464)
@@ -63,7 +70,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D5"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("5_37w7v")
+stream = ExtResource("8_vfbmd")
 
 [node name="Sprite2D6" type="Sprite2D" parent="."]
 position = Vector2(905, 464)
@@ -73,7 +80,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D6"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("5_37w7v")
+stream = ExtResource("9_xg4wl")
 
 [node name="Sprite2D7" type="Sprite2D" parent="."]
 position = Vector2(1069, 464)
@@ -83,7 +90,7 @@ script = ExtResource("3_u4cbq")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sprite2D7"]
 position = Vector2(32.0624, 0)
-stream = ExtResource("5_37w7v")
+stream = ExtResource("10_aeb8u")
 
 [node name="Button" type="Button" parent="."]
 offset_left = 504.0
@@ -91,6 +98,7 @@ offset_top = 127.0
 offset_right = 643.0
 offset_bottom = 259.0
 text = "Play Music"
+icon = SubResource("ImageTexture_dpwlv")
 script = ExtResource("6_jka7i")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
