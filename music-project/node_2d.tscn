@@ -93,11 +93,11 @@ position = Vector2(32.0624, 0)
 stream = ExtResource("10_aeb8u")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 504.0
-offset_top = 127.0
-offset_right = 643.0
-offset_bottom = 259.0
-text = "Play Music"
+offset_left = 503.0
+offset_top = 126.0
+offset_right = 655.0
+offset_bottom = 258.0
+text = "Play Demo Music"
 icon = SubResource("ImageTexture_dpwlv")
 script = ExtResource("6_jka7i")
 
