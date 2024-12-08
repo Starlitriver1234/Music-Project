@@ -1,20 +1,24 @@
-# Project Title
+# Christmas Piano
 
-Include for each contributer:
 
 Name:Tudor Marinescu
 
 Student Number: C24745999
 
-Class Group:
-
-Github: 
+Github: Starlitriver1234
 
 # Video
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+
 
 # Screenshots
+![image](https://github.com/user-attachments/assets/5dbe9c74-040f-4710-a743-dbf5f3fdf892)
+
+![image](https://github.com/user-attachments/assets/22406915-1e5c-4e03-9f56-045d56e1caed)
+
+![image](https://github.com/user-attachments/assets/cfcd87ed-e46f-4993-bda1-012a02f760fb)
+
+![image](https://github.com/user-attachments/assets/678ab1dd-060d-402c-aa37-62bac6bd106e)
 
 # Description of the project
 
@@ -34,9 +38,20 @@ Since it is a 2D game, it uses a 2D scene. At first, I created a sprite 2D for t
 I used a lot of assets for the game, and also replaced a lot of them since I changed the art style and the piano sounds quite a lot. So in order to keep it simple, I'll only mention the assets that are actually in the game. I didn't remove the unused ones so previous git commited versions of the game can still run properly. All of the assets such as sprites, backgrounds, piano keys and music have been created by myself in Procreate (an art program) and in Garageband (a music DAW)
 | Class/asset | Source |
 |-----------|-----------|
-| MyClass.cs | Self written |
-| MyClass1.cs | Modified from [reference]() |
-| MyClass2.cs | From [reference]() |
+| Piano Key.png | Self made in Procreate |
+| Piano Key2.png | Self made in Procreate |
+| Piano Background.png | self made in Procreate |
+| Demo Music.wav | Self made in Garageband |
+| Note 1.wav | Self made in Garageband |
+| Note 2.wav | Self made in Garageband |
+| Note 3.wav | Self made in Garageband |
+| Note 4.wav | Self made in Garageband |
+| Note 5.wav | Self made in Garageband |
+| Note 6.wav | Self made in Garageband |
+| Note 7.wav | Self made in Garageband |
+| sprite_2D.gd | Self written |
+| button.gd | Self written |
+
 
 # References
 * Item 1
@@ -46,10 +61,7 @@ I used a lot of assets for the game, and also replaced a lot of them since I cha
 
 I am very proud that this is my first game I've ever made alone other than the Twine project I created at the start of the semester. It was both very challanging and very fun to create it. I loved trying new things and buttons and creating more art and sounds for the game. Small fun fact, the song you can play in the game is a concept song made for our Game Jam space game. I was very happy I got to use it in the end. I also loved creating a piano since I loved playing the piano since I was little and composing music is one of my favourite hobbies. In general it was an incerdibly fun experience and I'm very happy and proud of the game I created. I put a lot of passion and love into the project and I think it turned out even better than what I originnally intended.
 
-Each team member
 
 # What I learned
 
 I learned a lot about hpw to use Godot, especially in the gdscript departement, where it took me a while to get going. I also learned a lot more about how to make better assets for games, which will be very usefull since I tend to help a lot in my group projects by making the assets. I also learned how to use Github a whole lot better and I liked the secure feeling it gave me, knowing that if something crashes or my laptop breaks, my project is safe.
-
-# Proposal submitted earlier can go here (if there is one):
