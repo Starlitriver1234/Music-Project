@@ -7,11 +7,11 @@
 [ext_resource type="AudioStream" uid="uid://cilrb4emc345a" path="res://Assets/Note 2.wav" id="5_o02tp"]
 [ext_resource type="AudioStream" uid="uid://v3n1fbiv54x3" path="res://Assets/Note 3.wav" id="6_1t13r"]
 [ext_resource type="Script" path="res://button.gd" id="6_jka7i"]
-[ext_resource type="AudioStream" uid="uid://crypoan6lhnfk" path="res://Assets/Menu.wav" id="6_vr7fj"]
 [ext_resource type="AudioStream" uid="uid://cf0tp27eqhu7w" path="res://Assets/Note 4.wav" id="7_l4axp"]
 [ext_resource type="AudioStream" uid="uid://cuhvyl20hxmwd" path="res://Assets/Note 5.wav" id="8_vfbmd"]
 [ext_resource type="AudioStream" uid="uid://dda3a1y0w53c0" path="res://Assets/Note 6.wav" id="9_xg4wl"]
 [ext_resource type="AudioStream" uid="uid://dp1t546rs33er" path="res://Assets/Note 7.wav" id="10_aeb8u"]
+[ext_resource type="AudioStream" uid="uid://dha2s7ngsslqn" path="res://Assets/Demo Music.wav" id="12_tg1ks"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_dpwlv"]
 
@@ -102,7 +102,7 @@ icon = SubResource("ImageTexture_dpwlv")
 script = ExtResource("6_jka7i")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Button"]
-stream = ExtResource("6_vr7fj")
+stream = ExtResource("12_tg1ks")
 playback_type = 1
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
